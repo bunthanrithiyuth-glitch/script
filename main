@@ -4,7 +4,7 @@
             GroupName = "vip", -- Group name to organize accounts on the Adopt Me dashboard (only used if Enabled = true)
         },
         EventFarm = {
-            AutoHauntlet = false, -- Enable/disable event farming
+            AutoHauntlet = true, -- Enable/disable event farming
             AutoTameCatBat = true, 
             AutoClaimTreatBag = true, 
         },
