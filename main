@@ -34,8 +34,8 @@
             SelectedPets = {}, -- Pet types to age with potions
         },
         AutoTrade = {
-            Enabled = false, -- Enable auto trading system (sends trades)
-            AutoAcceptTrades = true, -- Auto accept incoming trades (only accepts, won’t send trades if this is on alone)
+            Enabled = true, -- Enable auto trading system (sends trades)
+            AutoAcceptTrades = false, -- Auto accept incoming trades (only accepts, won’t send trades if this is on alone)
             SendTradesTo = "Adoptbro_3", -- Username to send items to
             TradeMode = "specific", -- "specific" or "all" - trade specific items or entire categories
             Categories = {"pets"}, -- Categories to trade: "pets", "toys", "food", "transport", "gifts", "stickers", "pet_accessories", "roleplay", "strollers"
