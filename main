@@ -4,9 +4,9 @@
             GroupName = "vip", -- Group name to organize accounts on the Adopt Me dashboard (only used if Enabled = true)
         },
         EventFarm = {
-            AutoHauntlet = false, -- Enable/disable event farming
-            AutoTameCatBat = false, 
-            AutoClaimTreatBag = false, 
+            AutoHauntlet = true, -- Enable/disable event farming
+            AutoTameCatBat = true, 
+            AutoClaimTreatBag = true, 
         },
         BabyFarm = false, -- Enable/disable baby farming
         PetFarm = {
@@ -42,7 +42,7 @@
             Items = {"halloween_2025_bat_cat"}, -- Specific items to trade when TradeMode is "specific" (e.g., {"dog", "cat", "hotdog", "sandwich", "apple"})
         },
         AutoBuy = {
-            Enabled = true, -- Enable auto buying system
+            Enabled = false, -- Enable auto buying system
             SelectedItems = {"halloween_2025_skelebat"}, -- Items to buy (e.g., {"pet_food", "water_cooler", "pizza_ingredients"})
         },
         AutoPay = {
