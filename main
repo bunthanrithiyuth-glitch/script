@@ -42,7 +42,7 @@
             Items = {"halloween_2025_skelebat", " halloween_2025_bat_cat"}, -- Specific items to trade when TradeMode is "specific" (e.g., {"dog", "cat", "hotdog", "sandwich", "apple"})
         },
         AutoBuy = {
-            Enabled = false, -- Enable auto buying system
+            Enabled = true, -- Enable auto buying system
             SelectedItems = {"halloween_2025_skelebat"}, -- Items to buy (e.g., {"pet_food", "water_cooler", "pizza_ingredients"})
         },
         AutoPay = {
