@@ -1,7 +1,7 @@
-    getgenv().Config = {
+getgenv().Config = {
         Dashboard = {
             Enabled = false, -- true = Connect to Adopt Me dashboard for remote monitoring/control (uses websocket), false = Local farming only (better performance, no external connections)
-            GroupName = "vip", -- Group name to organize accounts on the Adopt Me dashboard (only used if Enabled = true)
+            GroupName = "sender", -- Group name to organize accounts on the Adopt Me dashboard (only used if Enabled = true)
         },
         EventFarm = {
             AutoHauntlet = false, -- Enable/disable event farming
@@ -16,13 +16,13 @@
             EggType = "any", -- Which egg type to farm (any or specific egg ID)
             BuyEggType = "any", -- Which egg type to buy
             MaxPets = 1, -- Maximum pets to equip (1-2)
-            FarmUntilFullGrown = fals, -- Prioritize pets that aren't full grown
+            FarmUntilFullGrown = false, -- Prioritize pets that aren't full grown
             PrioritizeFriendship = false, -- Prioritize pets with higher friendship
             SelectiveFarm = false, -- Only farm specific pet types
-            SelectedPetTypes = {"halloween_2025_bat_cat", "halloween_2025_skelebat"}, -- Pet types to farm when SelectiveFarm is enabled
+            SelectedPetTypes = {}, -- Pet types to farm when SelectiveFarm is enabled
         },
         Misc = {
-            AutoNeon = true, -- Automatically make neon pets when possible
+            AutoNeon = false, -- Automatically make neon pets when possible
             AutoShowUI = false, -- (To Load the ui or not)
         },
         Performance = {
@@ -39,11 +39,11 @@
             SendTradesTo = "Adoptbro_3", -- Username to send items to
             TradeMode = "specific", -- "specific" or "all" - trade specific items or entire categories
             Categories = {"pets"}, -- Categories to trade: "pets", "toys", "food", "transport", "gifts", "stickers", "pet_accessories", "roleplay", "strollers"
-            Items = {"halloween_2025_bat_cat", "halloween_2025_skelebat"}, -- Specific items to trade when TradeMode is "specific" (e.g., {"dog", "cat", "hotdog", "sandwich", "apple"})
+            Items = {"halloween_2025_skelebat", "halloween_2025_bat_cat"}, -- Specific items to trade when TradeMode is "specific" (e.g., {"dog", "cat", "hotdog", "sandwich", "apple"})
         },
         AutoBuy = {
             Enabled = false, -- Enable auto buying system
-            SelectedItems = {"halloween_2025_skelebat"}, -- Items to buy (e.g., {"pet_food", "water_cooler", "pizza_ingredients"})
+            SelectedItems = {}, -- Items to buy (e.g., {"pet_food", "water_cooler", "pizza_ingredients"})
         },
         AutoPay = {
             Enabled = false, -- on or off 
@@ -67,11 +67,11 @@
         },
         IdleProgression = {
             Enabled = false,
-            SelectedPets = {}  -- List of pet IDs to prioritize
+            SelectedPets = {"halloween_2025_bat_cat"}  -- List of pet IDs to prioritize
         },
         Webhook = {
-            Enabled = true, -- Send webhook notifications
-            URL = "https://discord.com/api/webhooks/1351289892742631464/dFS2JiDiUbHfiIbI9kaTyIRen66GbLcsHCtinTUnR_YaGQtFt14LKwvCfvTtRTyzzBId", -- Discord webhook URL
+            Enabled = false, -- Send webhook notifications
+            URL = "https://discord.com/api/webhooks/", -- Discord webhook URL
         },
         TaskExclusion = {
             Enabled = false, -- Enable task exclusion system
