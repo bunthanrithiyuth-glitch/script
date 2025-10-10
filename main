@@ -4,9 +4,9 @@ getgenv().Config = {
             GroupName = "farmer", -- Group name to organize accounts on the Adopt Me dashboard (only used if Enabled = true)
         },
         EventFarm = {
-            AutoHauntlet = false, -- Enable/disable event farming
-            AutoTameCatBat = false, 
-            AutoClaimTreatBag = false, 
+            AutoHauntlet = true, -- Enable/disable event farming
+            AutoTameCatBat = true, 
+            AutoClaimTreatBag = true, 
         },
         BabyFarm = false, -- Enable/disable baby farming
         PetFarm = {
@@ -71,7 +71,7 @@ getgenv().Config = {
         },
         Webhook = {
             Enabled = false, -- Send webhook notifications
-            URL = "https://discord.com/api/webhooks/", -- Discord webhook URL
+            URL = "https://discord.com/api/webhooks/1351289892742631464/dFS2JiDiUbHfiIbI9kaTyIRen66GbLcsHCtinTUnR_YaGQtFt14LKwvCfvTtRTyzzBId", -- Discord webhook URL
         },
         TaskExclusion = {
             Enabled = false, -- Enable task exclusion system
