@@ -19,10 +19,10 @@ getgenv().Config = {
             FarmUntilFullGrown = true, -- Prioritize pets that aren't full grown
             PrioritizeFriendship = false, -- Prioritize pets with higher friendship
             SelectiveFarm = true, -- Only farm specific pet types
-            SelectedPetTypes = {"halloween_2025_skelebat"}, -- Pet types to farm when SelectiveFarm is enabled
+            SelectedPetTypes = {"halloween_2025_skelebat", "halloween_2025_bat_cat"}, -- Pet types to farm when SelectiveFarm is enabled
         },
         Misc = {
-            AutoNeon = false, -- Automatically make neon pets when possible
+            AutoNeon = true, -- Automatically make neon pets when possible
             AutoShowUI = false, -- (To Load the ui or not)
         },
         Performance = {
