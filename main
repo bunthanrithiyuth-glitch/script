@@ -10,20 +10,20 @@ getgenv().Config = {
         },
         BabyFarm = false, -- Enable/disable baby farming
         PetFarm = {
-            Enabled = false, -- Enable/disable pet farming
+            Enabled = true, -- Enable/disable pet farming
             FarmEggs = false, -- Farm eggs instead of regular pets
             BuyEggs = false, -- Automatically buy eggs when needed
             EggType = "any", -- Which egg type to farm (any or specific egg ID)
             BuyEggType = "any", -- Which egg type to buy
             MaxPets = 1, -- Maximum pets to equip (1-2)
             FarmUntilFullGrown = false, -- Prioritize pets that aren't full grown
-            PrioritizeFriendship = true, -- Prioritize pets with higher friendship
-            SelectiveFarm = true, -- Only farm specific pet types
+            PrioritizeFriendship = false, -- Prioritize pets with higher friendship
+            SelectiveFarm = false, -- Only farm specific pet types
             SelectedPetTypes = {"halloween_2025_skelebat", "halloween_2025_bat_cat"}, -- Pet types to farm when SelectiveFarm is enabled
         },
         Misc = {
             AutoNeon = true, -- Automatically make neon pets when possible
-            AutoShowUI = true, -- (To Load the ui or not)
+            AutoShowUI = false, -- (To Load the ui or not)
         },
         Performance = {
             Disable3DRendering = true, -- Disable 3D rendering for better performance
@@ -34,7 +34,7 @@ getgenv().Config = {
             SelectedPets = {"halloween_2025_bat_cat"}, -- Pet types to age with potions
         },
         AutoTrade = {
-            Enabled = true, -- Enable auto trading system (sends trades)
+            Enabled = false, -- Enable auto trading system (sends trades)
             AutoAcceptTrades = false, -- Auto accept incoming trades (only accepts, won’t send trades if this is on alone)
             SendTradesTo = "Adoptbro_3", -- Username to send items to
             TradeMode = "specific", -- "specific" or "all" - trade specific items or entire categories
