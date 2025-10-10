@@ -50,7 +50,7 @@ getgenv().Config = {
             TargetPlayer = "", -- username of player to pay
         },
         AutoOpen = {
-            Enabled = false,
+            Enabled = true,
             Items = {"halloween_2025_spider_box"},
         },
         AutoRecycle = {
