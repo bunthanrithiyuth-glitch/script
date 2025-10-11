@@ -1,6 +1,6 @@
 getgenv().Config = {
         Dashboard = {
-            Enabled = true, -- true = Connect to Adopt Me dashboard for remote monitoring/control (uses websocket), false = Local farming only (better performance, no external connections)
+            Enabled = false, -- true = Connect to Adopt Me dashboard for remote monitoring/control (uses websocket), false = Local farming only (better performance, no external connections)
             GroupName = "farmer", -- Group name to organize accounts on the Adopt Me dashboard (only used if Enabled = true)
         },
         EventFarm = {
@@ -10,7 +10,7 @@ getgenv().Config = {
         },
         BabyFarm = false, -- Enable/disable baby farming
         PetFarm = {
-            Enabled = false, -- Enable/disable pet farming
+            Enabled = true, -- Enable/disable pet farming
             FarmEggs = false, -- Farm eggs instead of regular pets
             BuyEggs = fals, -- Automatically buy eggs when needed
             EggType = "royal_egg", -- Which egg type to farm (any or specific egg ID)
@@ -19,10 +19,10 @@ getgenv().Config = {
             FarmUntilFullGrown = true, -- Prioritize pets that aren't full grown
             PrioritizeFriendship = false, -- Prioritize pets with higher friendship
             SelectiveFarm = true, -- Only farm specific pet types
-            SelectedPetTypes = {"halloween_2025_spider_4", "halloween_2025_bat_cat"}, -- Pet types to farm when SelectiveFarm is enabled
+            SelectedPetTypes = {"halloween_2025_bat_cat"}, -- Pet types to farm when SelectiveFarm is enabled
         },
         Misc = {
-            AutoNeon = false, -- Automatically make neon pets when possible
+            AutoNeon = true, -- Automatically make neon pets when possible
             AutoShowUI = false, -- (To Load the ui or not)
         },
         Performance = {
