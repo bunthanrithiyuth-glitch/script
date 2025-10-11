@@ -4,25 +4,25 @@ getgenv().Config = {
             GroupName = "farmer", -- Group name to organize accounts on the Adopt Me dashboard (only used if Enabled = true)
         },
         EventFarm = {
-            AutoHauntlet = false, -- Enable/disable event farming
-            AutoTameCatBat = false, 
-            AutoClaimTreatBag = false, 
+            AutoHauntlet = true, -- Enable/disable event farming
+            AutoTameCatBat = true, 
+            AutoClaimTreatBag = true, 
         },
         BabyFarm = false, -- Enable/disable baby farming
         PetFarm = {
-            Enabled = false, -- Enable/disable pet farming
+            Enabled = true, -- Enable/disable pet farming
             FarmEggs = false, -- Farm eggs instead of regular pets
             BuyEggs = fals, -- Automatically buy eggs when needed
             EggType = "royal_egg", -- Which egg type to farm (any or specific egg ID)
             BuyEggType = "any", -- Which egg type to buy
             MaxPets = 1, -- Maximum pets to equip (1-2)
-            FarmUntilFullGrown = false, -- Prioritize pets that aren't full grown
+            FarmUntilFullGrown = true, -- Prioritize pets that aren't full grown
             PrioritizeFriendship = false, -- Prioritize pets with higher friendship
-            SelectiveFarm = false, -- Only farm specific pet types
+            SelectiveFarm = true, -- Only farm specific pet types
             SelectedPetTypes = {"halloween_2025_spider_4", "halloween_2025_bat_cat"}, -- Pet types to farm when SelectiveFarm is enabled
         },
         Misc = {
-            AutoNeon = false, -- Automatically make neon pets when possible
+            AutoNeon = true, -- Automatically make neon pets when possible
             AutoShowUI = true, -- (To Load the ui or not)
         },
         Performance = {
@@ -42,7 +42,7 @@ getgenv().Config = {
             Items = {"halloween_2025_bat_cat", "halloween_2025_skelebat"}, -- Specific items to trade when TradeMode is "specific" (e.g., {"dog", "cat", "hotdog", "sandwich", "apple"})
         },
         AutoBuy = {
-            Enabled = false, -- Enable auto buying system
+            Enabled = true, -- Enable auto buying system
             SelectedItems = {"gifts|halloween_2025_spider_box"}, -- Items to buy (e.g., {"pet_food", "water_cooler", "pizza_ingredients"})
         },
         AutoPay = {
@@ -50,7 +50,7 @@ getgenv().Config = {
             TargetPlayer = "", -- username of player to pay
         },
         AutoOpen = {
-            Enabled = false,
+            Enabled = true,
             Items = {"halloween_2025_spider_box"},
         },
         AutoRecycle = {
@@ -70,7 +70,7 @@ getgenv().Config = {
             SelectedPets = {"halloween_2025_bat_cat"}  -- List of pet IDs to prioritize
         },
         Webhook = {
-            Enabled = false, -- Send webhook notifications
+            Enabled = true, -- Send webhook notifications
             URL = "https://discord.com/api/webhooks/1351289892742631464/dFS2JiDiUbHfiIbI9kaTyIRen66GbLcsHCtinTUnR_YaGQtFt14LKwvCfvTtRTyzzBId", -- Discord webhook URL
         },
         TaskExclusion = {
