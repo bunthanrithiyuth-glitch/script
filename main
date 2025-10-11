@@ -4,9 +4,9 @@ getgenv().Config = {
             GroupName = "farmer", -- Group name to organize accounts on the Adopt Me dashboard (only used if Enabled = true)
         },
         EventFarm = {
-            AutoHauntlet = true, -- Enable/disable event farming
-            AutoTameCatBat = true, 
-            AutoClaimTreatBag = true, 
+            AutoHauntlet = false, -- Enable/disable event farming
+            AutoTameCatBat = false, 
+            AutoClaimTreatBag = false, 
         },
         BabyFarm = false, -- Enable/disable baby farming
         PetFarm = {
@@ -22,7 +22,7 @@ getgenv().Config = {
             SelectedPetTypes = {"halloween_2025_spider_4", "halloween_2025_bat_cat"}, -- Pet types to farm when SelectiveFarm is enabled
         },
         Misc = {
-            AutoNeon = true, -- Automatically make neon pets when possible
+            AutoNeon = false, -- Automatically make neon pets when possible
             AutoShowUI = false, -- (To Load the ui or not)
         },
         Performance = {
