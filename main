@@ -10,7 +10,7 @@ getgenv().Config = {
         },
         BabyFarm = false, -- Enable/disable baby farming
         PetFarm = {
-            Enabled = true, -- Enable/disable pet farming
+            Enabled = false, -- Enable/disable pet farming
             FarmEggs = false, -- Farm eggs instead of regular pets
             BuyEggs = fals, -- Automatically buy eggs when needed
             EggType = "royal_egg", -- Which egg type to farm (any or specific egg ID)
