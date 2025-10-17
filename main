@@ -5,20 +5,20 @@ getgenv().Config = {
         },
         EventFarm = {
             AutoHauntlet = false, -- Enable/disable event farming
-            AutoTameCatBat = false, 
-            AutoClaimTreatBag = false, 
+            AutoTameCatBat = true, 
+            AutoClaimTreatBag = true, 
         },
         BabyFarm = false, -- Enable/disable baby farming
         PetFarm = {
             Enabled = true, -- Enable/disable pet farming
             FarmEggs = false, -- Farm eggs instead of regular pets
-            BuyEggs = fals, -- Automatically buy eggs when needed
+            BuyEggs = false, -- Automatically buy eggs when needed
             EggType = "royal_egg", -- Which egg type to farm (any or specific egg ID)
             BuyEggType = "any", -- Which egg type to buy
             MaxPets = 1, -- Maximum pets to equip (1-2)
             FarmUntilFullGrown = false, -- Prioritize pets that aren't full grown
             PrioritizeFriendship = false, -- Prioritize pets with higher friendship
-            SelectiveFarm = false, -- Only farm specific pet types
+            SelectiveFarm = true, -- Only farm specific pet types
             SelectedPetTypes = {"halloween_2025_bat_cat"}, -- Pet types to farm when SelectiveFarm is enabled
         },
         Misc = {
@@ -34,7 +34,7 @@ getgenv().Config = {
             SelectedPets = {"halloween_2025_slimingo"}, -- Pet types to age with potions
         },
         AutoTrade = {
-            Enabled = true, -- Enable auto trading system (sends trades)
+            Enabled = false, -- Enable auto trading system (sends trades)
             AutoAcceptTrades = false, -- Auto accept incoming trades (only accepts, won’t send trades if this is on alone)
             SendTradesTo = "Adoptbro_3", -- Username to send items to
             TradeMode = "specific", -- "specific" or "all" - trade specific items or entire categories
