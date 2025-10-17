@@ -4,7 +4,7 @@ getgenv().Config = {
             GroupName = "farmer 1", -- Group name to organize accounts on the Adopt Me dashboard (only used if Enabled = true)
         },
         EventFarm = {
-            AutoHauntlet = false, -- Enable/disable event farming
+            AutoHauntlet = true, -- Enable/disable event farming
             AutoTameCatBat = true, 
             AutoClaimTreatBag = true, 
         },
@@ -34,7 +34,7 @@ getgenv().Config = {
             SelectedPets = {"halloween_2025_slimingo"}, -- Pet types to age with potions
         },
         AutoTrade = {
-            Enabled = true, -- Enable auto trading system (sends trades)
+            Enabled = false, -- Enable auto trading system (sends trades)
             AutoAcceptTrades = false, -- Auto accept incoming trades (only accepts, won’t send trades if this is on alone)
             SendTradesTo = "Adoptbro_3", -- Username to send items to
             TradeMode = "specific", -- "specific" or "all" - trade specific items or entire categories
