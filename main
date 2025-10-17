@@ -43,7 +43,7 @@ getgenv().Config = {
         },
         AutoBuy = {
             Enabled = false, -- Enable auto buying system
-            SelectedItems = {"gifts|halloween_2025_spider_box"}, -- Items to buy (e.g., {"pet_food", "water_cooler", "pizza_ingredients"})
+            SelectedItems = {"halloween_2025_slimingo"}, -- Items to buy (e.g., {"pet_food", "water_cooler", "pizza_ingredients"})
         },
         AutoPay = {
             Enabled = false, -- on or off 
