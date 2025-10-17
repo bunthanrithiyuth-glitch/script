@@ -10,7 +10,7 @@ getgenv().Config = {
         },
         BabyFarm = false, -- Enable/disable baby farming
         PetFarm = {
-            Enabled = true, -- Enable/disable pet farming
+            Enabled = false, -- Enable/disable pet farming
             FarmEggs = false, -- Farm eggs instead of regular pets
             BuyEggs = false, -- Automatically buy eggs when needed
             EggType = "royal_egg", -- Which egg type to farm (any or specific egg ID)
@@ -34,12 +34,12 @@ getgenv().Config = {
             SelectedPets = {"halloween_2025_slimingo"}, -- Pet types to age with potions
         },
         AutoTrade = {
-            Enabled = false, -- Enable auto trading system (sends trades)
+            Enabled = true, -- Enable auto trading system (sends trades)
             AutoAcceptTrades = false, -- Auto accept incoming trades (only accepts, won’t send trades if this is on alone)
             SendTradesTo = "Adoptbro_3", -- Username to send items to
             TradeMode = "specific", -- "specific" or "all" - trade specific items or entire categories
             Categories = {"pets"}, -- Categories to trade: "pets", "toys", "food", "transport", "gifts", "stickers", "pet_accessories", "roleplay", "strollers"
-            Items = {"halloween_2025_slimingo"}, -- Specific items to trade when TradeMode is "specific" (e.g., {"dog", "cat", "hotdog", "sandwich", "apple"})
+            Items = {"halloween_2025_bat_cat"}, -- Specific items to trade when TradeMode is "specific" (e.g., {"dog", "cat", "hotdog", "sandwich", "apple"})
         },
         AutoBuy = {
             Enabled = false, -- Enable auto buying system
