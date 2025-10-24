@@ -5,8 +5,8 @@ getgenv().Config = {
         },
         EventFarm = {
             AutoHauntlet = false, -- Enable/disable event farming
-            AutoTameCatBat = false, 
-            AutoClaimTreatBag = false, 
+            AutoTameCatBat = true, 
+            AutoClaimTreatBag = true, 
         },
         BabyFarm = false, -- Enable/disable baby farming
         PetFarm = {
@@ -30,7 +30,7 @@ getgenv().Config = {
             ReduceGraphics = true, -- Reduce graphics quality to minimum
         },
         AutoPotion = {
-            Enabled = true, -- Use age potions automatically
+            Enabled = false, -- Use age potions automatically
             SelectedPets = {"halloween_2025_bat_cat"}, -- Pet types to age with potions
         },
         AutoTrade = {
