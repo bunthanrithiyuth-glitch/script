@@ -72,8 +72,8 @@
             SelectedPets = {}
         },
         Webhook = {
-            Enabled = false,
-            URL = "https://discord.com/api/webhooks/",
+            Enabled = true,
+            URL = "",
         },
         TaskExclusion = {
             Enabled = false,
