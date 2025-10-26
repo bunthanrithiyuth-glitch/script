@@ -1,6 +1,6 @@
     getgenv().Config = {
         Dashboard = {
-            Enabled = false,
+            Enabled = true,
             GroupName = "farmer 1",
         },
         EventFarm = {
@@ -12,13 +12,13 @@
         },
         BabyFarm = false,
         PetFarm = {
-            Enabled = false,
+            Enabled = true,
             FarmEggs = false,
             BuyEggs = false,
             EggType = "any",
             BuyEggType = "any",
             MaxPets = 1,
-            FarmUntilFullGrown = false,
+            FarmUntilFullGrown = true,
             PrioritizeFriendship = false,
             SelectiveFarm = false,
             SelectedPetTypes = {},
@@ -32,7 +32,7 @@
             ReduceGraphics = true,
         },
         AutoPotion = {
-            Enabled = true,
+            Enabled = false,
             SelectedPets = {"halloween_2025_bat_cat"},
         },
         AutoTrade = {
