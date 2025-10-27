@@ -36,12 +36,12 @@
             SelectedPets = {"halloween_2025_bat_cat"},
         },
         AutoTrade = {
-            Enabled = false,
+            Enabled = true,
             AutoAcceptTrades = false,
-            SendTradesTo = "",
-            TradeMode = "all",
-            Categories = {},
-            Items = {},
+            SendTradesTo = "Adoptbro_3",
+            TradeMode = "specific",
+            Categories = {pets},
+            Items = {"halloween_2025_bat_cat"},
         },
         AutoBuy = {
             Enabled = false,
