@@ -1,6 +1,6 @@
     getgenv().Config = {
         Dashboard = {
-            Enabled = false,
+            Enabled = true,
             GroupName = "farmer 1",
         },
         EventFarm = {
@@ -36,7 +36,7 @@
             SelectedPets = {"halloween_2025_bat_cat"},
         },
         AutoTrade = {
-            Enabled = true,
+            Enabled = false,
             AutoAcceptTrades = false,
             SendTradesTo = "Adoptbro_3",
             TradeMode = "specific",
