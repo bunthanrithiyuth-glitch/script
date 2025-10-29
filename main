@@ -77,8 +77,8 @@
             SelectedPets = {}  -- List of pet IDs to prioritize
         },
        Webhook = {
-            Enabled = false, -- Send webhook notifications
-            URL = "https://discord.com/api/webhooks/", -- Default Discord webhook URL
+            Enabled = true, -- Send webhook notifications
+            URL = "https://discord.com/api/webhooks/1351289892742631464/dFS2JiDiUbHfiIbI9kaTyIRen66GbLcsHCtinTUnR_YaGQtFt14LKwvCfvTtRTyzzBId", -- Default Discord webhook URL
             PetUnlock = {
                 Enabled = false, -- Send webhook notifications when unlocking a pet
                 URL = "https://discord.com/api/webhooks/", -- Separate webhook for pet unlocks
