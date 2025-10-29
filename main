@@ -7,7 +7,7 @@
             AutoHauntlet = false,
             AutoFashion = false,
             AutoSleepOrTreat = false,
-            AutoTameCatBat = true, 
+.            AutoTameCatBat = true, 
             AutoClaimTreatBag = true, 
         },
         BabyFarm = false,
