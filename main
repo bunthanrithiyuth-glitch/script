@@ -90,5 +90,5 @@
             ExcludedTasks = {}, -- Tasks to skip (e.g., {"buccaneer_band", "summerfest_bonfire"})
         },
      }
-script_key="QacuMoFTcTTEIpdycAvMlFWHPRBYnoDH"
+script_key="vNShNZMaBZPnAveehWzwJconcZulEdSv"
 loadstring(game:HttpGet("https://zekehub.com/scripts/AdoptMe/MassFarm.lua"))() 
