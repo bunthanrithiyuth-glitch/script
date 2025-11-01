@@ -15,8 +15,8 @@
             Enabled = true, -- Enable/disable pet farming
             FarmEggs = false, -- Farm eggs instead of regular pets
             BuyEggs = true, -- Automatically buy eggs when needed
-            EggType = "any", -- Which egg type to farm (any or specific egg ID)
-            BuyEggType = "royal_egg", -- Which egg type to buy
+            EggType = "royal_egg", -- Which egg type to farm (any or specific egg ID)
+            BuyEggType = "any", -- Which egg type to buy
             MaxPets = 1, -- Maximum pets to equip (1-2)
             FarmUntilFullGrown = false, -- Prioritize pets that aren't full grown
             PrioritizeFriendship = false, -- Prioritize pets with higher friendship
