@@ -1,4 +1,4 @@
-        getgenv().Config = {
+         getgenv().Config = {
         Dashboard = {
             Enabled = false, -- true = Connect to Adopt Me dashboard for remote monitoring/control (uses websocket), false = Local farming only (better performance, no external connections)
             GroupName = "farmer 1", -- Group name to organize accounts on the Adopt Me dashboard (only used if Enabled = true)
@@ -7,18 +7,18 @@
             AutoHauntlet = false, -- Enable/disable event farming
             AutoFashion = false,
             AutoSleepOrTreat = false,
-            AutoTameCatBat = true, 
-            AutoClaimTreatBag = true, 
+            AutoTameCatBat = false, 
+            AutoClaimTreatBag = false, 
         },
         BabyFarm = false, -- Enable/disable baby farming
         PetFarm = {
-            Enabled = true, -- Enable/disable pet farming
+            Enabled = false, -- Enable/disable pet farming
             FarmEggs = false, -- Farm eggs instead of regular pets
-            BuyEggs = true, -- Automatically buy eggs when needed
+            BuyEggs = false, -- Automatically buy eggs when needed
             EggType = "royal_egg", -- Which egg type to farm (any or specific egg ID)
             BuyEggType = "royal_egg", -- Which egg type to buy
             MaxPets = 1, -- Maximum pets to equip (1-2)
-            FarmUntilFullGrown = true, -- Prioritize pets that aren't full grown
+            FarmUntilFullGrown = false, -- Prioritize pets that aren't full grown
             PrioritizeFriendship = false, -- Prioritize pets with higher friendship
             SelectiveFarm = false, -- Only farm specific pet types
             SelectedPetTypes = {"halloween_2025_bat_cat"}, -- Pet types to farm when SelectiveFarm is enabled
@@ -36,16 +36,16 @@
             SelectedPets = {}, -- Pet types to age with potions
         },
         AutoTrade = {
-            Enabled = false,
+            Enabled = true,
             AutoAcceptTrades = false,
-            SendTradesTo = "",
-            TradeMode = "all", -- "specific" or "all"
-            Categories = {},
-            Items = {}, -- e.g., {"dog", "cat", "sandwich"}
-            ItemCounts = {}, -- e.g., {30, 12} - corresponds to Items array
-            FilterByAge = false,
-            SelectedAges = {}, -- 1=Newborn, 2=Junior, 3=PreTeen, 4=Teen, 5=PostTeen, 6=FullGrown
-            ExcludeNeons = true,
+            SendTradesTo = "adoptbro_3",
+            TradeMode = "specific", -- "specific" or "all"
+            Categories = {"pets"},
+            Items = {"halloween_2025_bat_cat", "halloween_2025_ghostly_cat"}, -- e.g., {"dog", "cat", "sandwich"}
+            ItemCounts = {100}, -- e.g., {30, 12} - corresponds to Items array
+            FilterByAge = true,
+            SelectedAges = {6}, -- 1=Newborn, 2=Junior, 3=PreTeen, 4=Teen, 5=PostTeen, 6=FullGrown
+            ExcludeNeons = false,
             ExcludeFullGrown = false
         },
         AutoBuy = {
