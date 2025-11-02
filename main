@@ -7,18 +7,18 @@
             AutoHauntlet = false, -- Enable/disable event farming
             AutoFashion = false,
             AutoSleepOrTreat = false,
-            AutoTameCatBat = false, 
-            AutoClaimTreatBag = false, 
+            AutoTameCatBat = true, 
+            AutoClaimTreatBag = true, 
         },
         BabyFarm = false, -- Enable/disable baby farming
         PetFarm = {
-            Enabled = false, -- Enable/disable pet farming
+            Enabled = true, -- Enable/disable pet farming
             FarmEggs = false, -- Farm eggs instead of regular pets
             BuyEggs = false, -- Automatically buy eggs when needed
             EggType = "royal_egg", -- Which egg type to farm (any or specific egg ID)
-            BuyEggType = "royal_egg", -- Which egg type to buy
+            BuyEggType = "specific", -- Which egg type to buy
             MaxPets = 1, -- Maximum pets to equip (1-2)
-            FarmUntilFullGrown = false, -- Prioritize pets that aren't full grown
+            FarmUntilFullGrown = true, -- Prioritize pets that aren't full grown
             PrioritizeFriendship = false, -- Prioritize pets with higher friendship
             SelectiveFarm = false, -- Only farm specific pet types
             SelectedPetTypes = {"halloween_2025_bat_cat"}, -- Pet types to farm when SelectiveFarm is enabled
@@ -36,7 +36,7 @@
             SelectedPets = {}, -- Pet types to age with potions
         },
         AutoTrade = {
-            Enabled = true,
+            Enabled = false,
             AutoAcceptTrades = false,
             SendTradesTo = "adoptbro_3",
             TradeMode = "specific", -- "specific" or "all"
