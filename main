@@ -16,11 +16,11 @@
             FarmEggs = false, -- Farm eggs instead of regular pets
             BuyEggs = true, -- Automatically buy eggs when needed
             EggType = "royal_egg", -- Which egg type to farm (any or specific egg ID)
-            BuyEggType = "any", -- Which egg type to buy
+            BuyEggType = "royal_egg", -- Which egg type to buy
             MaxPets = 1, -- Maximum pets to equip (1-2)
-            FarmUntilFullGrown = false, -- Prioritize pets that aren't full grown
+            FarmUntilFullGrown = true, -- Prioritize pets that aren't full grown
             PrioritizeFriendship = false, -- Prioritize pets with higher friendship
-            SelectiveFarm = true, -- Only farm specific pet types
+            SelectiveFarm = false, -- Only farm specific pet types
             SelectedPetTypes = {"halloween_2025_bat_cat"}, -- Pet types to farm when SelectiveFarm is enabled
         },
         Misc = {
@@ -49,7 +49,7 @@
             ExcludeFullGrown = false
         },
         AutoBuy = {
-            Enabled = true, -- Enable auto buying system
+            Enabled = false, -- Enable auto buying system
             SelectedItems = {"halloween_2025_ghostly_cat"}, -- Items to buy (e.g., {"pet_food", "water_cooler", "pizza_ingredients"})
         },
         AutoPay = {
