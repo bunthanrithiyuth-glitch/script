@@ -1,4 +1,4 @@
-         getgenv().Config = {
+     getgenv().Config = {
         Dashboard = {
             Enabled = false, -- true = Connect to Adopt Me dashboard for remote monitoring/control (uses websocket), false = Local farming only (better performance, no external connections)
             GroupName = "farmer 1", -- Group name to organize accounts on the Adopt Me dashboard (only used if Enabled = true)
@@ -41,10 +41,10 @@
             SendTradesTo = "adoptbro_3",
             TradeMode = "specific", -- "specific" or "all"
             Categories = {"pets"},
-            Items = {"halloween_2025_bat_cat", "halloween_2025_ghostly_cat"}, -- e.g., {"dog", "cat", "sandwich"}
+            Items = {"halloween_2025_ghostly_cat"}, -- e.g., {"dog", "cat", "sandwich"}
             ItemCounts = {100}, -- e.g., {30, 12} - corresponds to Items array
             FilterByAge = true,
-            SelectedAges = {6}, -- 1=Newborn, 2=Junior, 3=PreTeen, 4=Teen, 5=PostTeen, 6=FullGrown
+            SelectedAges = {1}, -- 1=Newborn, 2=Junior, 3=PreTeen, 4=Teen, 5=PostTeen, 6=FullGrown
             ExcludeNeons = false,
             ExcludeFullGrown = false
         },
