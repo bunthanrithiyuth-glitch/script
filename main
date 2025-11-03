@@ -1,27 +1,20 @@
-     getgenv().Config = {
+    getgenv().Config = {
         Dashboard = {
             Enabled = false, -- true = Connect to Adopt Me dashboard for remote monitoring/control (uses websocket), false = Local farming only (better performance, no external connections)
-            GroupName = "farmer 1", -- Group name to organize accounts on the Adopt Me dashboard (only used if Enabled = true)
-        },
-        EventFarm = {
-            AutoHauntlet = false, -- Enable/disable event farming
-            AutoFashion = false,
-            AutoSleepOrTreat = false,
-            AutoTameCatBat = true, 
-            AutoClaimTreatBag = true, 
+            GroupName = "", -- Group name to organize accounts on the Adopt Me dashboard (only used if Enabled = true)
         },
         BabyFarm = true, -- Enable/disable baby farming
         PetFarm = {
             Enabled = true, -- Enable/disable pet farming
-            FarmEggs = false, -- Farm eggs instead of regular pets
+            FarmEggs = true, -- Farm eggs instead of regular pets
             BuyEggs = true, -- Automatically buy eggs when needed
-            EggType = "royal_egg", -- Which egg type to farm (any or specific egg ID)
-            BuyEggType = "specific", -- Which egg type to buy
+            EggType = "any", -- Which egg type to farm (any or specific egg ID)
+            BuyEggType = "aztec_egg_2025_aztec_egg", -- Which egg type to buy
             MaxPets = 1, -- Maximum pets to equip (1-2)
             FarmUntilFullGrown = true, -- Prioritize pets that aren't full grown
             PrioritizeFriendship = false, -- Prioritize pets with higher friendship
             SelectiveFarm = false, -- Only farm specific pet types
-            SelectedPetTypes = {"halloween_2025_bat_cat"}, -- Pet types to farm when SelectiveFarm is enabled
+            SelectedPetTypes = {}, -- Pet types to farm when SelectiveFarm is enabled
         },
         Misc = {
             AutoNeon = true, -- Automatically make neon pets when possible
@@ -38,19 +31,19 @@
         AutoTrade = {
             Enabled = false,
             AutoAcceptTrades = false,
-            SendTradesTo = "adoptbro_3",
-            TradeMode = "specific", -- "specific" or "all"
-            Categories = {"pets"},
-            Items = {"halloween_2025_ghostly_cat"}, -- e.g., {"dog", "cat", "sandwich"}
-            ItemCounts = {100}, -- e.g., {30, 12} - corresponds to Items array
-            FilterByAge = true,
-            SelectedAges = {1}, -- 1=Newborn, 2=Junior, 3=PreTeen, 4=Teen, 5=PostTeen, 6=FullGrown
-            ExcludeNeons = false,
+            SendTradesTo = "",
+            TradeMode = "all", -- "specific" or "all"
+            Categories = {},
+            Items = {}, -- e.g., {"dog", "cat", "sandwich"}
+            ItemCounts = {}, -- e.g., {30, 12} - corresponds to Items array
+            FilterByAge = false,
+            SelectedAges = {}, -- 1=Newborn, 2=Junior, 3=PreTeen, 4=Teen, 5=PostTeen, 6=FullGrown
+            ExcludeNeons = true,
             ExcludeFullGrown = false
         },
         AutoBuy = {
             Enabled = false, -- Enable auto buying system
-            SelectedItems = {"halloween_2025_ghostly_cat"}, -- Items to buy (e.g., {"pet_food", "water_cooler", "pizza_ingredients"})
+            SelectedItems = {}, -- Items to buy (e.g., {"pet_food", "water_cooler", "pizza_ingredients"})
         },
         AutoPay = {
             Enabled = false, -- on or off 
@@ -73,15 +66,15 @@
             KeepFullGrown = false -- Keep full grown pets
         },
         IdleProgression = {
-            Enabled = false,
-            SelectedPets = {}  -- List of pet IDs to prioritize
+            Enabled = true,
+            SelectedPets = {"aztec_egg_2025_winged_snake", "halloween_2025_bat_cat"}  -- List of pet IDs to prioritize
         },
        Webhook = {
             Enabled = true, -- Send webhook notifications
             URL = "https://discord.com/api/webhooks/1351289892742631464/dFS2JiDiUbHfiIbI9kaTyIRen66GbLcsHCtinTUnR_YaGQtFt14LKwvCfvTtRTyzzBId", -- Default Discord webhook URL
             PetUnlock = {
-                Enabled = false, -- Send webhook notifications when unlocking a pet
-                URL = "https://discord.com/api/webhooks/", -- Separate webhook for pet unlocks
+                Enabled = true, -- Send webhook notifications when unlocking a pet
+                URL = "https://discord.com/api/webhooks/1432973030887391365/NJY6sA-n62LXz3ipY77bj4CI5EVuD1glMnyATPniDCUoTdiXEC2hjhFs1SqQJKJn2hFV", -- Separate webhook for pet unlocks
                 FilterRarities = {"legendary", "ultra_rare"} -- Only send webhook for these rarities
             },
         },
@@ -91,4 +84,4 @@
         },
      }
 script_key="vNShNZMaBZPnAveehWzwJconcZulEdSv"
-loadstring(game:HttpGet("https://zekehub.com/scripts/AdoptMe/MassFarm.lua"))() 
+loadstring(game:HttpGet("https://zekehub.com/scripts/AdoptMe/MassFarm.lua"))()
