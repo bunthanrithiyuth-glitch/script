@@ -5,8 +5,8 @@
         },
         BabyFarm = true, -- Enable/disable baby farming
         PetFarm = {
-            Enabled = true, -- Enable/disable pet farming
-            FarmEggs = true, -- Farm eggs instead of regular pets
+            Enabled = false, -- Enable/disable pet farming
+            FarmEggs = false, -- Farm eggs instead of regular pets
             BuyEggs = true, -- Automatically buy eggs when needed
             EggType = "any", -- Which egg type to farm (any or specific egg ID)
             BuyEggType = "aztec_egg_2025_aztec_egg", -- Which egg type to buy
@@ -29,16 +29,16 @@
             SelectedPets = {}, -- Pet types to age with potions
         },
         AutoTrade = {
-            Enabled = false,
+            Enabled = true,
             AutoAcceptTrades = false,
-            SendTradesTo = "",
-            TradeMode = "all", -- "specific" or "all"
-            Categories = {},
-            Items = {}, -- e.g., {"dog", "cat", "sandwich"}
-            ItemCounts = {}, -- e.g., {30, 12} - corresponds to Items array
-            FilterByAge = false,
-            SelectedAges = {}, -- 1=Newborn, 2=Junior, 3=PreTeen, 4=Teen, 5=PostTeen, 6=FullGrown
-            ExcludeNeons = true,
+            SendTradesTo = "adoptbro_3",
+            TradeMode = "specific", -- "specific" or "all"
+            Categories = {"pets"},
+            Items = {"halloween_2025_ghostly_cat", "halloween_2025_bat_cat"}, -- e.g., {"dog", "cat", "sandwich"}
+            ItemCounts = {100}, -- e.g., {30, 12} - corresponds to Items array
+            FilterByAge = true,
+            SelectedAges = {6}, -- 1=Newborn, 2=Junior, 3=PreTeen, 4=Teen, 5=PostTeen, 6=FullGrown
+            ExcludeNeons = false,
             ExcludeFullGrown = false
         },
         AutoBuy = {
