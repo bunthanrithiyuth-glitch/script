@@ -3,7 +3,7 @@
             Enabled = false, -- true = Connect to Adopt Me dashboard for remote monitoring/control (uses websocket), false = Local farming only (better performance, no external connections)
             GroupName = "farmer 1", -- Group name to organize accounts on the Adopt Me dashboard (only used if Enabled = true)
         },
-        BabyFarm = true, -- Enable/disable baby farming
+        BabyFarm = false, -- Enable/disable baby farming
         PetFarm = {
             Enabled = false, -- Enable/disable pet farming
             FarmEggs = false, -- Farm eggs instead of regular pets
@@ -29,7 +29,7 @@
             SelectedPets = {"halloween_2025_ghostly_cat", "halloween_2025_bat_cat"}, -- Pet types to age with potions
         },
         AutoTrade = {
-            Enabled = false,
+            Enabled = true,
             AutoAcceptTrades = false,
             SendTradesTo = "adoptbro_3",
             TradeMode = "specific", -- "specific" or "all"
