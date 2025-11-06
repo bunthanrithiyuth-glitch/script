@@ -5,9 +5,9 @@
         },
         BabyFarm = true, -- Enable/disable baby farming
         PetFarm = {
-            Enabled = true, -- Enable/disable pet farming
-            FarmEggs = true, -- Farm eggs instead of regular pets
-            BuyEggs = true, -- Automatically buy eggs when needed
+            Enabled = false, -- Enable/disable pet farming
+            FarmEggs = false, -- Farm eggs instead of regular pets
+            BuyEggs = false, -- Automatically buy eggs when needed
             EggType = "any", -- Which egg type to farm (any or specific egg ID)
             BuyEggType = "aztec_egg_2025_aztec_egg", -- Which egg type to buy
             MaxPets = 1, -- Maximum pets to equip (1-2)
@@ -25,8 +25,8 @@
             ReduceGraphics = true, -- Reduce graphics quality to minimum
         },
         AutoPotion = {
-            Enabled = false, -- Use age potions automatically
-            SelectedPets = {}, -- Pet types to age with potions
+            Enabled = true, -- Use age potions automatically
+            SelectedPets = {"halloween_2025_ghostly_cat", "halloween_2025_bat_cat"}, -- Pet types to age with potions
         },
         AutoTrade = {
             Enabled = false,
@@ -42,8 +42,8 @@
             ExcludeFullGrown = false
         },
         AutoBuy = {
-            Enabled = false, -- Enable auto buying system
-            SelectedItems = {}, -- Items to buy (e.g., {"pet_food", "water_cooler", "pizza_ingredients"})
+            Enabled = true, -- Enable auto buying system
+            SelectedItems = {"halloween_2025_ghostly_cat"}, -- Items to buy (e.g., {"pet_food", "water_cooler", "pizza_ingredients"})
         },
         AutoPay = {
             Enabled = false, -- on or off 
@@ -54,7 +54,7 @@
             Items = {},
         },
         AutoRecycle = {
-            Enabled = true, -- Enable auto recycler system
+            Enabled = false, -- Enable auto recycler system
             RarityFilter = { --Rarity filter for recycling pets
                 common = true,
                 uncommon = true,
@@ -66,7 +66,7 @@
             KeepFullGrown = false -- Keep full grown pets
         },
         IdleProgression = {
-            Enabled = true,
+            Enabled = false,
             SelectedPets = {"halloween_2025_bat_cat"}  -- List of pet IDs to prioritize
         },
        Webhook = {
