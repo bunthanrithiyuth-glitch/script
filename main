@@ -3,13 +3,13 @@
             Enabled = false, -- true = Connect to Adopt Me dashboard for remote monitoring/control (uses websocket), false = Local farming only (better performance, no external connections)
             GroupName = "farmer 1", -- Group name to organize accounts on the Adopt Me dashboard (only used if Enabled = true)
         },
-        BabyFarm = false, -- Enable/disable baby farming
+        BabyFarm = true, -- Enable/disable baby farming
         PetFarm = {
             Enabled = true, -- Enable/disable pet farming
             FarmEggs = false, -- Farm eggs instead of regular pets
             BuyEggs = true, -- Automatically buy eggs when needed
             EggType = "any", -- Which egg type to farm (any or specific egg ID)
-            BuyEggType = "retired_egg", -- Which egg type to buy
+            BuyEggType = "royal_egg", -- Which egg type to buy
             MaxPets = 1, -- Maximum pets to equip (1-2)
             FarmUntilFullGrown = false, -- Prioritize pets that aren't full grown
             PrioritizeFriendship = true, -- Prioritize pets with higher friendship
@@ -54,7 +54,7 @@
             Items = {},
         },
         AutoRecycle = {
-            Enabled = false, -- Enable auto recycler system
+            Enabled = true, -- Enable auto recycler system
             RarityFilter = { --Rarity filter for recycling pets
                 common = true,
                 uncommon = true,
