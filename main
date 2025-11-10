@@ -1,18 +1,26 @@
 task.spawn(function()
-script_key="kEntHvnODLqhYlGlwuLvVBxuyuzqwtSW";
+    script_key="kEntHvnODLqhYlGlwuLvVBxuyuzqwtSW";
     getgenv().Config = {
-        ["PetAMountToBuy"] = "99", -- can be 999
+        ["PetAMountToBuy"] = "999", -- can be 999
         ["WhatCategory"] = "pets", -- gifts if WhatCategory = "" then = pets
         ["PetRemoteToBuy"] = "aztec_egg_2025_aztec_egg", -- exemple for gifts halloween_2025_spider_box
 
+
         ["PetFarmAutoSwitchFullGrown"] = false,
         ["PetFarmActive"] = false, -- farm potion
-        ["EggFarmActive"] = true, -- farm egg, if no more eggs will farm potion
+
+
+        ["EggFarmActive"] = true, -- farm egg, if no more eggs will farm potion, if found new egg will farm them to
+        ["EggToIgnore"] = {"pet_recycler_2025_basic_egg"}, -- eggs to ignore when eggfarm active
+        ["LoopBuyEgg"] = true, -- when enough bucks will buy egg, only work with eggfarm
+        ["EggToBuyEgg"] = "aztec_egg_2025_aztec_egg",
+
 
         ["NeonMegaFarm"] = true,
         ["BuyEgg"] = "aztec_egg_2025_aztec_egg", -- only work with NeonMegaFarm, will loop buy this egg when enough bucks
         
-        ["AutoReleasePet"] = true,
+
+        ["AutoReleasePet"] = true, -- work with egg/pet farm, will release selected rarity
         ["RecycleWebhook"] = "https://discord.com/api/webhooks/1371491842234912839/jk9zLgJ7-WtuJ2qDIKVKDtuNJimYP-1iO-q2qPyN2Fz5dtc0DCZFCF9fYjtWFiRxJPx7",
         ["common"] = true,
         ["uncommon"] = true,
