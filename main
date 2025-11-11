@@ -29,16 +29,16 @@
             SelectedPets = {"aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake"}, -- Pet types to age with potions
         },
         AutoTrade = {
-            Enabled = false,
+            Enabled = true,
             AutoAcceptTrades = false,
-            SendTradesTo = "",
+            SendTradesTo = "adoptbro_3",
             TradeMode = "specific", -- "specific" or "all"
             Categories = {"pets"},
             Items = {"pet_recycler_2025_giant_panda", "pet_recycler_2025_dango_penquin", "aztec_egg_2025_winged_snake", "aztec_egg_2025_temple_friend"}, -- e.g., {"dog", "cat", "sandwich"}
             ItemCounts = {30}, -- e.g., {30, 12} - corresponds to Items array
-            FilterByAge = false,
-            SelectedAges = {}, -- 1=Newborn, 2=Junior, 3=PreTeen, 4=Teen, 5=PostTeen, 6=FullGrown
-            ExcludeNeons = true,
+            FilterByAge = true,
+            SelectedAges = {6}, -- 1=Newborn, 2=Junior, 3=PreTeen, 4=Teen, 5=PostTeen, 6=FullGrown
+            ExcludeNeons = false,
             ExcludeFullGrown = false
         },
         AutoBuy = {
