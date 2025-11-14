@@ -1,5 +1,5 @@
 task.spawn(function()
-    script_key="";
+    script_key="kEntHvnODLqhYlGlwuLvVBxuyuzqwtSW";
     getgenv().Config = {
         ["PetAMountToBuy"] = "999", -- can be 999
         ["WhatCategory"] = "pets", -- gifts if WhatCategory = "" then = pets
