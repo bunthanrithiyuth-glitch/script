@@ -8,7 +8,7 @@
             Enabled = true, -- Enable/disable pet farming
             FarmEggs = true, -- Farm eggs instead of regular pets
             BuyEggs = true, -- Automatically buy eggs when needed
-            EggType = "specific", -- Which egg type to farm (any or specific egg ID)
+            EggType = "any", -- Which egg type to farm (any or specific egg ID)
             BuyEggType = "aztec_egg_2025_aztec_egg", -- Which egg type to buy
             MaxPets = 2, -- Maximum pets to equip (1-2)
             FarmUntilFullGrown = false, -- Prioritize pets that aren't full grown
@@ -68,8 +68,8 @@
             SelectedPets = {}
         },
         IdleProgression = {
-            Enabled = false,
-            SelectedPets = {}  -- List of pet IDs to prioritize
+            Enabled = true,
+            SelectedPets = {"aztec_egg}  -- List of pet IDs to prioritize
         },
        Webhook = {
             Enabled = true, -- Send webhook notifications
@@ -77,7 +77,7 @@
             PetUnlock = {
                 Enabled = true, -- Send webhook notifications when unlocking a pet
                 URL = "https://discord.com/api/webhooks/1432973030887391365/NJY6sA-n62LXz3ipY77bj4CI5EVuD1glMnyATPniDCUoTdiXEC2hjhFs1SqQJKJn2hFV", -- Separate webhook for pet unlocks
-                FilterRarities = {"legendary"} -- Only send webhook for these rarities
+                FilterRarities = {"legendary", "ultra_rare"} -- Only send webhook for these rarities
             },
         },
         TaskExclusion = {
