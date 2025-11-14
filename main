@@ -1,4 +1,4 @@
-getgenv().Config = {
+        getgenv().Config = {
         Dashboard = {
             Enabled = false, -- true = Connect to Adopt Me dashboard for remote monitoring/control (uses websocket), false = Local farming only (better performance, no external connections)
             GroupName = "", -- Group name to organize accounts on the Adopt Me dashboard (only used if Enabled = true)
@@ -54,7 +54,7 @@ getgenv().Config = {
             Items = {},
         },
         AutoRecycle = {
-            Enabled = true, -- Enable auto recycler system
+            Enabled = false, -- Enable auto recycler system
             RarityFilter = { --Rarity filter for recycling pets
                 common = true,
                 uncommon = true,
@@ -69,7 +69,7 @@ getgenv().Config = {
         },
         IdleProgression = {
             Enabled = true,
-            SelectedPets = {"aztec_egg}  -- List of pet IDs to prioritize
+            SelectedPets = {"aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake"}  -- List of pet IDs to prioritize
         },
        Webhook = {
             Enabled = true, -- Send webhook notifications
