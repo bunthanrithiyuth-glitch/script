@@ -1,13 +1,13 @@
-        getgenv().Config = {
+getgenv().Config = {
         Dashboard = {
             Enabled = false, -- true = Connect to Adopt Me dashboard for remote monitoring/control (uses websocket), false = Local farming only (better performance, no external connections)
             GroupName = "", -- Group name to organize accounts on the Adopt Me dashboard (only used if Enabled = true)
         },
-        BabyFarm = false, -- Enable/disable baby farming
+        BabyFarm = true, -- Enable/disable baby farming
         PetFarm = {
             Enabled = true, -- Enable/disable pet farming
             FarmEggs = false, -- Farm eggs instead of regular pets
-            BuyEggs = false, -- Automatically buy eggs when needed
+            BuyEggs = true, -- Automatically buy eggs when needed
             EggType = "any", -- Which egg type to farm (any or specific egg ID)
             BuyEggType = "aztec_egg_2025_aztec_egg", -- Which egg type to buy
             MaxPets = 1, -- Maximum pets to equip (1-2)
@@ -16,8 +16,11 @@
             SelectiveFarm = false, -- Only farm specific pet types
             SelectedPetTypes = {}, -- Pet types to farm when SelectiveFarm is enabled
         },
+        AutoNeon = { -- Auto neon 
+            Enabled = true,
+            MakeMega = true, -- to use neon pets to make mega neon
+        },
         Misc = {
-            AutoNeon = true, -- Automatically make neon pets when possible
             AutoShowUI = false, -- (To Load the ui or not)
         },
         Performance = {
@@ -49,12 +52,12 @@
             Enabled = false, -- on or off 
             TargetPlayer = "", -- username of player to pay
         },
-        AutoOpen = {
+        AutoOpen = { -- auto open gift boxes/baits etc 
             Enabled = false,
             Items = {},
         },
         AutoRecycle = {
-            Enabled = false, -- Enable auto recycler system
+            Enabled = true, -- Enable auto recycler system
             RarityFilter = { --Rarity filter for recycling pets
                 common = true,
                 uncommon = true,
@@ -63,20 +66,20 @@
                 legendary = false
             },
             KeepNeons = true,
-            KeepFullGrown = false,
-            SelectiveMode = false,
+            KeepFullGrown = false, -- Keep full grown pets
+            SelectiveMode = false, -- Only recycle specific pet types
             SelectedPets = {}
         },
-        IdleProgression = {
+        IdleProgression = { -- pet pen
             Enabled = true,
-            SelectedPets = {"aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake"}  -- List of pet IDs to prioritize
+            SelectedPets = {}  -- List of pet IDs to use for the pet pen
         },
        Webhook = {
             Enabled = true, -- Send webhook notifications
             URL = "https://discord.com/api/webhooks/1351289892742631464/dFS2JiDiUbHfiIbI9kaTyIRen66GbLcsHCtinTUnR_YaGQtFt14LKwvCfvTtRTyzzBId", -- Default Discord webhook URL
             PetUnlock = {
-                Enabled = true, -- Send webhook notifications when unlocking a pet
-                URL = "https://discord.com/api/webhooks/1432973030887391365/NJY6sA-n62LXz3ipY77bj4CI5EVuD1glMnyATPniDCUoTdiXEC2hjhFs1SqQJKJn2hFV", -- Separate webhook for pet unlocks
+                Enabled = false, -- Send webhook notifications when unlocking a pet
+                URL = "https://discord.com/api/webhooks/", -- Separate webhook for pet unlocks
                 FilterRarities = {"legendary", "ultra_rare"} -- Only send webhook for these rarities
             },
         },
