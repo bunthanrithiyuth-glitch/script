@@ -1,7 +1,7 @@
 getgenv().Config = {
         Dashboard = {
-            Enabled = false, -- true = Connect to Adopt Me dashboard for remote monitoring/control (uses websocket), false = Local farming only (better performance, no external connections)
-            GroupName = "", -- Group name to organize accounts on the Adopt Me dashboard (only used if Enabled = true)
+            Enabled = true, -- true = Connect to Adopt Me dashboard for remote monitoring/control (uses websocket), false = Local farming only (better performance, no external connections)
+            GroupName = "farmer 2", -- Group name to organize accounts on the Adopt Me dashboard (only used if Enabled = true)
         },
         BabyFarm = true, -- Enable/disable baby farming
         PetFarm = {
@@ -29,19 +29,19 @@ getgenv().Config = {
         },
         AutoPotion = {
             Enabled = false, -- Use age potions automatically
-            SelectedPets = {"aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake"}, -- Pet types to age with potions
+            SelectedPets = {}, -- Pet types to age with potions
         },
         AutoTrade = {
             Enabled = false,
             AutoAcceptTrades = false,
-            SendTradesTo = "adoptbro_3",
-            TradeMode = "specific", -- "specific" or "all"
-            Categories = {"pets"},
-            Items = {"aztec_egg_2025_winged_snake", "aztec_egg_2025_temple_friend"}, -- e.g., {"dog", "cat", "sandwich"}
-            ItemCounts = {30}, -- e.g., {30, 12} - corresponds to Items array
-            FilterByAge = true,
-            SelectedAges = {6}, -- 1=Newborn, 2=Junior, 3=PreTeen, 4=Teen, 5=PostTeen, 6=FullGrown
-            ExcludeNeons = false,
+            SendTradesTo = "",
+            TradeMode = "all", -- "specific" or "all"
+            Categories = {},
+            Items = {}, -- e.g., {"dog", "cat", "sandwich"}
+            ItemCounts = {}, -- e.g., {30, 12} - corresponds to Items array
+            FilterByAge = false,
+            SelectedAges = {}, -- 1=Newborn, 2=Junior, 3=PreTeen, 4=Teen, 5=PostTeen, 6=FullGrown
+            ExcludeNeons = true,
             ExcludeFullGrown = false
         },
         AutoBuy = {
@@ -63,7 +63,7 @@ getgenv().Config = {
                 uncommon = true,
                 rare = true,
                 ultra_rare = true,
-                legendary = false
+                legendary = false,
             },
             KeepNeons = true,
             KeepFullGrown = false, -- Keep full grown pets
@@ -72,7 +72,7 @@ getgenv().Config = {
         },
         IdleProgression = { -- pet pen
             Enabled = true,
-            SelectedPets = {"aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake"}  -- List of pet IDs to use for the pet pen
+            SelectedPets = {"aztec_egg_2025_temple_friend", "aztec_2025_winged_snake"}  -- List of pet IDs to use for the pet pen
         },
        Webhook = {
             Enabled = true, -- Send webhook notifications
