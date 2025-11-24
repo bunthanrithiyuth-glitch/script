@@ -21,7 +21,7 @@ getgenv().Config = {
             MakeMega = true, -- to use neon pets to make mega neon
         },
         Misc = {
-            AutoShowUI = true, -- (To Load the ui or not)
+            AutoShowUI = false, -- (To Load the ui or not)
         },
         Performance = {
             Disable3DRendering = true, -- Disable 3D rendering for better performance
@@ -32,16 +32,16 @@ getgenv().Config = {
             SelectedPets = {"aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake"}, -- Pet types to age with potions
         },
         AutoTrade = {
-            Enabled = false,
+            Enabled = true,
             AutoAcceptTrades = false,
-            SendTradesTo = "",
-            TradeMode = "all", -- "specific" or "all"
-            Categories = {},
-            Items = {}, -- e.g., {"dog", "cat", "sandwich"}
-            ItemCounts = {}, -- e.g., {30, 12} - corresponds to Items array
-            FilterByAge = false,
-            SelectedAges = {}, -- 1=Newborn, 2=Junior, 3=PreTeen, 4=Teen, 5=PostTeen, 6=FullGrown
-            ExcludeNeons = true,
+            SendTradesTo = "adoptbro_3",
+            TradeMode = "specific", -- "specific" or "all"
+            Categories = {"pets"},
+            Items = {"aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake", "pet_recycler_2025_crystal_egg"}, -- e.g., {"dog", "cat", "sandwich"}
+            ItemCounts = {100}, -- e.g., {30, 12} - corresponds to Items array
+            FilterByAge = true,
+            SelectedAges = {6}, -- 1=Newborn, 2=Junior, 3=PreTeen, 4=Teen, 5=PostTeen, 6=FullGrown
+            ExcludeNeons = false,
             ExcludeFullGrown = false
         },
         AutoBuy = {
