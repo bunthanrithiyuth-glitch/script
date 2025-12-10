@@ -12,7 +12,7 @@ getgenv().Config = {
             BuyEggType = "aztec_egg_2025_aztec_egg", -- Which egg type to buy
             MaxPets = 1, -- Maximum pets to equip (1-2)
             FarmUntilFullGrown = false, -- Prioritize pets that aren't full grown
-            PrioritizeFriendship = false, -- Prioritize pets with higher friendship
+            PrioritizeFriendship = true, -- Prioritize pets with higher friendship
             SelectiveFarm = false, -- Only farm specific pet types
             SelectedPetTypes = {}, -- Pet types to farm when SelectiveFarm is enabled
         },
@@ -34,14 +34,14 @@ getgenv().Config = {
         AutoTrade = {
             Enabled = true,
             AutoAcceptTrades = false,
-            SendTradesTo = "adoptbro_3",
+            SendTradesTo = "Adoptbro_3",
             TradeMode = "specific", -- "specific" or "all"
             Categories = {"pets"},
             Items = {"pet_recycler_2025_giant_panda", "penguins_2025_dango_penguins"}, -- e.g., {"dog", "cat", "sandwich"}
-            ItemCounts = {100}, -- e.g., {30, 12} - corresponds to Items array
+            ItemCounts = {30}, -- e.g., {30, 12} - corresponds to Items array
             FilterByAge = false,
-            SelectedAges = {}, -- 1=Newborn, 2=Junior, 3=PreTeen, 4=Teen, 5=PostTeen, 6=FullGrown
-            ExcludeNeons = true,
+            SelectedAges = {1}, -- 1=Newborn, 2=Junior, 3=PreTeen, 4=Teen, 5=PostTeen, 6=FullGrown
+            ExcludeNeons = false,
             ExcludeFullGrown = false
         },
         AutoBuy = {
