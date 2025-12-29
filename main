@@ -20,17 +20,17 @@ getgenv().Config = {
             AutoExchange = {
                 Enabled = true, -- Exchange bucks for event currency
             },
-            AutoSleighball = true, -- Automatically play sleighball minigame (does not work with baby or pet farm)
-            AutoHumbug = true, -- Automatically play humbug minigame (does not work with baby or pet farm)
-            AutoStarCatch = true, -- Automatically play star catch minigame (does not work with baby or pet farm)
+            AutoSleighball = false, -- Automatically play sleighball minigame (does not work with baby or pet farm)
+            AutoHumbug = false, -- Automatically play humbug minigame (does not work with baby or pet farm)
+            AutoStarCatch = false, -- Automatically play star catch minigame (does not work with baby or pet farm)
         },
         AutoTrade = {
             Enabled = true, -- Enable auto trading
             AutoAcceptTrades = true, -- Accept incoming trade requests
             Usernames = {"adoptbro_3"}, -- Players to send trades to
-            TradeMode = "all", -- "all" = everything in categories, "specific" = only Items list
+            TradeMode = "specific", -- "all" = everything in categories, "specific" = only Items list
             Categories = {"pets"}, -- {"pets", "toys", "food", "transport", "gifts", "stickers", "pet_accessories", "roleplay"}
-            Items = {}, -- Item IDs when TradeMode = "specific"
+            Items = {"pet_recycler_2025_giant_panda", "penguins_2025_dango_penguins"}, -- Item IDs when TradeMode = "specific"
             ItemCounts = {10}, -- Max count per item in Items array
             PetTypes = {all}, -- {} = all, {"regular", "neon", "mega"}
             Ages = {all}, -- {} = all, {1, 2, 3, 4, 5, 6}
@@ -50,7 +50,7 @@ getgenv().Config = {
             FPSCap = 2, -- FPS cap option (0 = uncapped)
         },
         AutoPotion = {
-            Enabled = false, -- Use age potions on pets to level them up
+            Enabled = true, -- Use age potions on pets to level them up
             SelectedPets = {"winter_2025_christmas_spirit"}, -- Pet IDs to use potions on (empty = does nothing)
         },
         AutoBuy = {
