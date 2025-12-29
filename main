@@ -34,7 +34,7 @@ getgenv().Config = {
             ItemCounts = {10}, -- Max count per item in Items array
             PetTypes = {all}, -- {} = all, {"regular", "neon", "mega"}
             Ages = {all}, -- {} = all, {1, 2, 3, 4, 5, 6}
-            AutoLeaveAfterTrades = true, -- Leave trade area after completing trades
+            AutoLeaveAfterTrades = false, -- Leave trade area after completing trades
         },
         AutoNeon = {
             Enabled = false, -- Enable auto neon/mega fusion
