@@ -5,7 +5,7 @@ getgenv().Config = {
         },
         BabyFarm = false, -- Does baby farm
         PetFarm = {
-            Enabled = false, -- Enables the Pet Farm
+            Enabled = true, -- Enables the Pet Farm
             FarmEggs = false, -- If true, equips eggs to hatch them. If false, equips regular pets
             BuyEggs = false, -- If FarmEggs is true and no eggs in inventory, buy eggs automatically
             EggType = "any", -- Which egg to equip ("any" = first available, or specific egg ID)
@@ -20,9 +20,9 @@ getgenv().Config = {
             AutoExchange = {
                 Enabled = true, -- Exchange bucks for event currency
             },
-            AutoSleighball = true, -- Automatically play sleighball minigame (does not work with baby or pet farm)
-            AutoHumbug = true, -- Automatically play humbug minigame (does not work with baby or pet farm)
-            AutoStarCatch = true, -- Automatically play star catch minigame (does not work with baby or pet farm)
+            AutoSleighball = false, -- Automatically play sleighball minigame (does not work with baby or pet farm)
+            AutoHumbug = false, -- Automatically play humbug minigame (does not work with baby or pet farm)
+            AutoStarCatch = false, -- Automatically play star catch minigame (does not work with baby or pet farm)
         },
         AutoTrade = {
             Enabled = true, -- Enable auto trading
@@ -66,7 +66,7 @@ getgenv().Config = {
             Items = {}, -- Item IDs to auto open
         },
         AutoRecycle = {
-            Enabled = true, -- Recycle pets at recycler for rewards
+            Enabled = false, -- Recycle pets at recycler for rewards
             RarityFilter = {common = true, uncommon = true, rare = true, ultra_rare = false, legendary = true}, -- Which rarities to recycle (true = recycle, false = keep)
             KeepNeons = true, -- If true, don't recycle neon or mega neon pets
             KeepFullGrown = false, -- If true, don't recycle full grown pets
