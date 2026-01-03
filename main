@@ -5,7 +5,7 @@ getgenv().Config = {
         },
         BabyFarm = false, -- Does baby farm
         PetFarm = {
-            Enabled = false, -- Enables the Pet Farm
+            Enabled = true, -- Enables the Pet Farm
             FarmEggs = false, -- If true, equips eggs to hatch them. If false, equips regular pets
             BuyEggs = false, -- If FarmEggs is true and no eggs in inventory, buy eggs automatically
             EggType = "any", -- Which egg to equip ("any" = first available, or specific egg ID)
@@ -50,7 +50,7 @@ getgenv().Config = {
             FPSCap = 2, -- FPS cap option (0 = uncapped)
         },
         AutoPotion = {
-            Enabled = true, -- Use age potions on pets to level them up
+            Enabled = false, -- Use age potions on pets to level them up
             SelectedPets = {"winter_2025_christmas_spirit"}, -- Pet IDs to use potions on (empty = does nothing)
         },
         AutoBuy = {
@@ -66,7 +66,7 @@ getgenv().Config = {
             Items = {}, -- Item IDs to auto open
         },
         AutoRecycle = {
-            Enabled = true, -- Recycle pets at recycler for rewards
+            Enabled = false, -- Recycle pets at recycler for rewards
             RarityFilter = {common = false, uncommon = false, rare = true, ultra_rare = false, legendary = true}, -- Which rarities to recycle (true = recycle, false = keep)
             KeepNeons = true, -- If true, don't recycle neon or mega neon pets
             KeepFullGrown = false, -- If true, don't recycle full grown pets
