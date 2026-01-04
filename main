@@ -5,7 +5,7 @@ getgenv().Config = {
         },
         BabyFarm = false, -- Does baby farm
         PetFarm = {
-            Enabled = true, -- Enables the Pet Farm
+            Enabled = false, -- Enables the Pet Farm
             FarmEggs = false, -- If true, equips eggs to hatch them. If false, equips regular pets
             BuyEggs = false, -- If FarmEggs is true and no eggs in inventory, buy eggs automatically
             EggType = "any", -- Which egg to equip ("any" = first available, or specific egg ID)
@@ -20,9 +20,9 @@ getgenv().Config = {
             AutoExchange = {
                 Enabled = true, -- Exchange bucks for event currency
             },
-            AutoSleighball = false, -- Automatically play sleighball minigame (does not work with baby or pet farm)
-            AutoHumbug = false, -- Automatically play humbug minigame (does not work with baby or pet farm)
-            AutoStarCatch = false, -- Automatically play star catch minigame (does not work with baby or pet farm)
+            AutoSleighball = true, -- Automatically play sleighball minigame (does not work with baby or pet farm)
+            AutoHumbug = true, -- Automatically play humbug minigame (does not work with baby or pet farm)
+            AutoStarCatch = true, -- Automatically play star catch minigame (does not work with baby or pet farm)
         },
         AutoTrade = {
             Enabled = true, -- Enable auto trading
@@ -54,7 +54,7 @@ getgenv().Config = {
             SelectedPets = {"winter_2025_christmas_spirit"}, -- Pet IDs to use potions on (empty = does nothing)
         },
         AutoBuy = {
-            Enabled = true, -- Automatically buy items from shops
+            Enabled = false, -- Automatically buy items from shops
             SelectedItems = {"winter_2025_christmas_spirit"}, -- Item IDs to buy
         },
         AutoPay = {
@@ -79,7 +79,7 @@ getgenv().Config = {
         },
         Webhook = {
             Enabled = true, -- Send webhook notifications to Discord
-            URL = "https://discord.com/api/webhooks/1351289892742631464/dFS2JiDiUbHfiIbI9kaTyIRen66GbLcsHCtinTUnR_YaGQtFt14LKwvCfvTtRTyzzBId", -- Discord webhook URL for notifications
+            URL = "https://discord.com/api/webhooks/1457289618108973110/BVaYwNjSIFQpiQY1JkWjvbrRecxKi_lyHtwpbklfF0iUJ74cgrSfzdkigmwVcvAAEXup", -- Discord webhook URL for notifications
             PetUnlock = {
                 Enabled = false, -- Send webhook when hatching/unlocking a pet
                 URL = "https://discord.com/api/webhooks/", -- Webhook URL for pet unlocks
