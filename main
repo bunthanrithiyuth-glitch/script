@@ -50,7 +50,7 @@ getgenv().Config = {
             FPSCap = 2, -- FPS cap option (0 = uncapped)
         },
         AutoPotion = {
-            Enabled = false, -- Use age potions on pets to level them up
+            Enabled = true, -- Use age potions on pets to level them up
             SelectedPets = {"winter_2025_christmas_spirit"}, -- Pet IDs to use potions on (empty = does nothing)
         },
         AutoBuy = {
