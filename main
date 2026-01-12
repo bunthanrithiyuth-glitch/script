@@ -25,7 +25,7 @@
             FPSCap = 0, -- FPS cap option (0 = uncapped)
         },
         AutoBuy = {
-            Enabled = false, -- Automatically buy items from shops
+            Enabled = true, -- Automatically buy items from shops
             SelectedItems = {"aztec_egg_2025_aztec_egg"}, -- Item IDs to buy
             BuyAmounts = {}, -- How many of each item to buy. Example: {5, 10} buys 5 cracked_eggs and 10 sandwiches. Empty {} buys infinite of each item. If there are more items than amounts, remaining items default to infinite.
         },
