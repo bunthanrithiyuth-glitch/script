@@ -1,10 +1,10 @@
  getgenv().Config = {
-        BabyFarm = false, -- Does   farm
+        BabyFarm = true, -- Does   farm
         PetFarm = {
             Enabled = true, -- Enables the Pet Farm
             FarmEggs = true, -- If true, equips eggs to hatch them. If false, equips regular pets
             BuyEggs = false, -- If FarmEggs is true and no eggs in inventory, buy eggs automatically
-            EggType = "aztec_egg_2025_aztec_egg", -- Which egg to equip ("any" = first available, or specific egg ID)
+            EggType = "cracked_egg", -- Which egg to equip ("any" = first available, or specific egg ID)
             BuyEggType = "any", -- Which egg to buy when BuyEggs is true ("any" or specific egg ID)
             MaxPets = 1, -- How many pets to equip at once (1 = free, 2 = requires Robux gamepass)
             FarmUntilFullGrown = false, -- If true, selects pets that aren't full grown first
@@ -25,8 +25,8 @@
             FPSCap = 0, -- FPS cap option (0 = uncapped)
         },
         AutoBuy = {
-            Enabled = false, -- Automatically buy items from shops
-            SelectedItems = {"aztec_egg_2025_aztec_egg"}, -- Item IDs to buy
+            Enabled = true, -- Automatically buy items from shops
+            SelectedItems = {"cracked_egg"}, -- Item IDs to buy
             BuyAmounts = {}, -- How many of each item to buy. Example: {5, 10} buys 5 cracked_eggs and 10 sandwiches. Empty {} buys infinite of each item. If there are more items than amounts, remaining items default to infinite.
         },
         AutoOpen = {
