@@ -60,8 +60,8 @@ getgenv().Config = {
             Items = {}, -- Item IDs to auto open
         },
         AutoRecycle = {
-            Enabled = false, -- Recycle pets at recycler for rewards
-            RarityFilter = {common = true, uncommon = true, rare = false, ultra_rare = false, legendary = false}, -- Which rarities to recycle (true = recycle, false = keep)
+            Enabled = true, -- Recycle pets at recycler for rewards
+            RarityFilter = {common = true, uncommon = true, rare = true, ultra_rare = true, legendary = false}, -- Which rarities to recycle (true = recycle, false = keep)
             AgeFilter = {}, -- empty = all ages, or {1,2,3,4,5,6}
             VersionFilter = {}, -- empty = all, or {"regular", "neon", "mega"}
             ExcludedPets = {}, -- Pet IDs to never recycle even if rarity matches {"dog", "cat"}
