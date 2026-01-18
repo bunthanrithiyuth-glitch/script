@@ -18,13 +18,13 @@ getgenv().Config = {
         },
         AutoTrade = {
             Enabled = false, -- Enable auto trading
-            AutoAcceptTrades = true, -- Accept incoming trade requests
-            Usernames = {"adoptbro_3"}, -- Players to send trades to
-            TradeMode = "specific", -- "all" = everything in categories, "specific" = only Items list
-            Categories = {"pets"}, -- {"pets", "toys", "food", "transport", "gifts", "stickers", "pet_accessories", "roleplay"}
-            Items = {"penguins_2025_dango_penguins", "pet_recycler_2025_giant_panda"}, -- Item IDs when TradeMode = "specific"
-            ItemCounts = {1}, -- Max count per item in Items array
-            PetTypes = {all}, -- {} = all, {"regular", "neon", "mega"}
+            AutoAcceptTrades = false, -- Accept incoming trade requests
+            Usernames = {}, -- Players to send trades to
+            TradeMode = "all", -- "all" = everything in categories, "specific" = only Items list
+            Categories = {}, -- {"pets", "toys", "food", "transport", "gifts", "stickers", "pet_accessories", "roleplay"}
+            Items = {}, -- Item IDs when TradeMode = "specific"
+            ItemCounts = {}, -- Max count per item in Items array
+            PetTypes = {}, -- {} = all, {"regular", "neon", "mega"}
             Ages = {}, -- {} = all, {1, 2, 3, 4, 5, 6}
             AutoLeaveAfterTrades = false, -- Leave trade area after completing trades
         },
@@ -60,24 +60,24 @@ getgenv().Config = {
             Items = {}, -- Item IDs to auto open
         },
         AutoRecycle = {
-            Enabled = true, -- Recycle pets at recycler for rewards
-            RarityFilter = {common = true, uncommon = true, rare = true, ultra_rare =  true, legendary = false}, -- Which rarities to recycle (true = recycle, false = keep)
+            Enabled = false, -- Recycle pets at recycler for rewards
+            RarityFilter = {common = true, uncommon = true, rare = false, ultra_rare = false, legendary = false}, -- Which rarities to recycle (true = recycle, false = keep)
             AgeFilter = {}, -- empty = all ages, or {1,2,3,4,5,6}
             VersionFilter = {}, -- empty = all, or {"regular", "neon", "mega"}
             ExcludedPets = {}, -- Pet IDs to never recycle even if rarity matches {"dog", "cat"}
         },
         IdleProgression = {
             Enabled = true, -- Put pets in pet pen for idle leveling
-            SelectedPets = {"cracked_egg", "pet_recycler_2025_basic_egg"}, -- Pet IDs to put in pet pen (empty = use all)
+            SelectedPets = {"cracked_egg", "rpet_recycler_2025_basic_egg"}, -- Pet IDs to put in pet pen (empty = use all)
             ExcludedPets = {"pet_recycler_2025_crystal_egg"}, -- Pet IDs to never put in pet pen
         },
         Webhook = {
             Enabled = true, -- Send webhook notifications to Discord
             URL = "https://discord.com/api/webhooks/1351289892742631464/dFS2JiDiUbHfiIbI9kaTyIRen66GbLcsHCtinTUnR_YaGQtFt14LKwvCfvTtRTyzzBId", -- Discord webhook URL for notifications
             PetUnlock = {
-                Enabled = true, -- Send webhook when hatching/unlocking a pet
-                URL = "https://discord.com/api/webhooks/1432973030887391365/NJY6sA-n62LXz3ipY77bj4CI5EVuD1glMnyATPniDCUoTdiXEC2hjhFs1SqQJKJn2hFV", -- Webhook URL for pet unlocks
-                FilterRarities = {"legendary"}, -- Only send for these rarities
+                Enabled = false, -- Send webhook when hatching/unlocking a pet
+                URL = "", -- Webhook URL for pet unlocks
+                FilterRarities = {"legendary", "ultra_rare"}, -- Only send for these rarities
             },
         },
         TaskExclusion = {
@@ -85,5 +85,5 @@ getgenv().Config = {
             ExcludedTasks = {}, -- Task IDs to skip (e.g., {"buccaneer_band", "summerfest_bonfire"})
         },
     };
-script_key="vNShNZMaBZPnAveehWzwJconcZulEdSv"
+script_key="VRoysikDpbIhpxxBXzwXzIwwxFaewwKs"
 loadstring(game:HttpGet("https://zekehub.com/scripts/AdoptMe/MassFarm.lua"))()
