@@ -1,7 +1,7 @@
  getgenv().Config = {
         BabyFarm = false, -- Does   farm
         PetFarm = {
-            Enabled = true, -- Enables the Pet Farm
+            Enabled = false, -- Enables the Pet Farm
             FarmEggs = true, -- If true, equips eggs to hatch them. If false, equips regular pets
             BuyEggs = false, -- If FarmEggs is true and no eggs in inventory, buy eggs automatically
             EggType = "cracked_egg", -- Which egg to equip ("any" = first available, or specific egg ID)
@@ -22,7 +22,7 @@
         Settings = {
             ShowOverlay = true, -- Show stats overlay (disables 3D rendering)
             ReduceGraphics = true, -- Reduce graphics quality to minimum
-            FPSCap = 0, -- FPS cap option (0 = uncapped)
+            FPSCap = 2, -- FPS cap option (0 = uncapped)
         },
         AutoBuy = {
             Enabled = false, -- Automatically buy items from shops
@@ -35,7 +35,7 @@
         },
         AutoPotion = {
             Enabled = true, -- Use age potions on pets to level them up
-            SelectedPets = {" aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake"}, -- Pet IDs to use potions on (empty = does nothing)
+            SelectedPets = {"aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake"}, -- Pet IDs to use potions on (empty = does nothing)
         },
         AutoRecycle = {
             Enabled = true, -- Recycle pets at recycler for rewards
