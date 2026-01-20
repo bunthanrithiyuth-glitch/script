@@ -5,19 +5,19 @@ getgenv().Config = {
         },
         BabyFarm = false, -- Does baby farm
         PetFarm = {
-            Enabled = false, -- Enables the Pet Farm
-            FarmEggs = false, -- If true, equips eggs to hatch them. If false, equips regular pets
-            BuyEggs = false, -- If FarmEggs is true and no eggs in inventory, buy eggs automatically
-            EggType = "any", -- Which egg to equip ("any" = first available, or specific egg ID)
-            BuyEggType = "any", -- Which egg to buy when BuyEggs is true ("any" or specific egg ID)
+            Enabled = true, -- Enables the Pet Farm
+            FarmEggs = true, -- If true, equips eggs to hatch them. If false, equips regular pets
+            BuyEggs = true, -- If FarmEggs is true and no eggs in inventory, buy eggs automatically
+            EggType = "cracked_egg", -- Which egg to equip ("any" = first available, or specific egg ID)
+            BuyEggType = "cracked_egg", -- Which egg to buy when BuyEggs is true ("any" or specific egg ID)
             MaxPets = 1, -- How many pets to equip at once (1 = free, 2 = requires Robux gamepass)
-            FarmUntilFullGrown = false, -- If true, selects pets that aren't full grown first
+            FarmUntilFullGrown = true, -- If true, selects pets that aren't full grown first
             PrioritizeFriendship = false, -- If true, selects pets with higher friendship level first
             SelectiveFarm = false, -- If true, only farm pets in SelectedPetTypes list
             SelectedPetTypes = {}, -- Pet IDs to farm when SelectiveFarm is true (e.g., {"dog", "cat"})
         },
         AutoTrade = {
-            Enabled = true, -- Enable auto trading
+            Enabled = false, -- Enable auto trading
             AutoAcceptTrades = true, -- Accept incoming trade requests
             Usernames = {"adoptegg_1"}, -- Players to send trades to
             TradeMode = "specific", -- "all" = everything in categories, "specific" = only Items list
@@ -60,23 +60,23 @@ getgenv().Config = {
             Items = {}, -- Item IDs to auto open
         },
         AutoRecycle = {
-            Enabled = false, -- Recycle pets at recycler for rewards
-            RarityFilter = {common = true, uncommon = true, rare = false, ultra_rare = false, legendary = false}, -- Which rarities to recycle (true = recycle, false = keep)
+            Enabled = true, -- Recycle pets at recycler for rewards
+            RarityFilter = {common = true, uncommon = true, rare = true, ultra_rare = true, legendary = false}, -- Which rarities to recycle (true = recycle, false = keep)
             AgeFilter = {}, -- empty = all ages, or {1,2,3,4,5,6}
             VersionFilter = {}, -- empty = all, or {"regular", "neon", "mega"}
             ExcludedPets = {}, -- Pet IDs to never recycle even if rarity matches {"dog", "cat"}
         },
         IdleProgression = {
-            Enabled = false, -- Put pets in pet pen for idle leveling
-            SelectedPets = {"cracked_egg"}, -- Pet IDs to put in pet pen (empty = use all)
-            ExcludedPets = {}, -- Pet IDs to never put in pet pen
+            Enabled = true, -- Put pets in pet pen for idle leveling
+            SelectedPets = {"cracked_egg", "pet_recycler_2025_basic_egg"}, -- Pet IDs to put in pet pen (empty = use all)
+            ExcludedPets = {"pet_recycler_2025_crystal_egg"}, -- Pet IDs to never put in pet pen
         },
         Webhook = {
-            Enabled = false, -- Send webhook notifications to Discord
-            URL = "https://discord.com/api/", -- Discord webhook URL for notifications
+            Enabled = true, -- Send webhook notifications to Discord
+            URL = "https://discord.com/api/webhooks/1351289892742631464/dFS2JiDiUbHfiIbI9kaTyIRen66GbLcsHCtinTUnR_YaGQtFt14LKwvCfvTtRTyzzBId", -- Discord webhook URL for notifications
             PetUnlock = {
-                Enabled = false, -- Send webhook when hatching/unlocking a pet
-                URL = "https://discord.com/api/webhooks/", -- Webhook URL for pet unlocks
+                Enabled = true, -- Send webhook when hatching/unlocking a pet
+                URL = "https://discord.com/api/webhooks/1371491842234912839/jk9zLgJ7-WtuJ2qDIKVKDtuNJimYP-1iO-q2qPyN2Fz5dtc0DCZFCF9fYjtWFiRxJPx7", -- Webhook URL for pet unlocks
                 FilterRarities = {"legendary", "ultra_rare"}, -- Only send for these rarities
             },
         },
