@@ -5,7 +5,7 @@ getgenv().Config = {
         },
         BabyFarm = true, -- Does baby farm
         PetFarm = {
-            Enabled = false, -- Enables the Pet Farm
+            Enabled = true, -- Enables the Pet Farm
             FarmEggs = true, -- If true, equips eggs to hatch them. If false, equips regular pets
             BuyEggs = true, -- If FarmEggs is true and no eggs in inventory, buy eggs automatically
             EggType = "aztec_egg_2025_aztec_egg", -- Which egg to equip ("any" = first available, or specific egg ID)
@@ -17,7 +17,7 @@ getgenv().Config = {
             SelectedPetTypes = {}, -- Pet IDs to farm when SelectiveFarm is true (e.g., {"dog", "cat"})
         },
         AutoTrade = {
-            Enabled = true, -- Enable auto trading
+            Enabled = false, -- Enable auto trading
             AutoAcceptTrades = true, -- Accept incoming trade requests
             Usernames = {"eggcrys_2"}, -- Players to send trades to
             TradeMode = "specific", -- "all" = everything in categories, "specific" = only Items list
