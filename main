@@ -17,7 +17,7 @@ getgenv().Config = {
             SelectedPetTypes = {}, -- Pet IDs to farm when SelectiveFarm is true (e.g., {"dog", "cat"})
         },
         AutoTrade = {
-            Enabled = false, -- Enable auto trading
+            Enabled = true, -- Enable auto trading
             AutoAcceptTrades = true, -- Accept incoming trade requests
             Usernames = {"eggcrys_2"}, -- Players to send trades to
             TradeMode = "specific", -- "all" = everything in categories, "specific" = only Items list
