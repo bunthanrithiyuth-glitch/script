@@ -19,10 +19,10 @@
             SelectedPetTypes = {}, -- Pet IDs to farm when SelectiveFarm is true (e.g., {"dog", "cat"})
         },
         AutoTrade = {
-            Enabled = false, -- Enable auto trading
-            AutoAcceptTrades = false, -- Accept incoming trade requests
+            Enabled = true, -- Enable auto trading
+            AutoAcceptTrades = true, -- Accept incoming trade requests
             AutoLeaveAfterTrades = false, -- Leave the game after completing trades
-            Usernames = {}, -- Players to send trades to (e.g. {"player1", "player2"})
+            Usernames = {"adoptbro_01"}, -- Players to send trades to (e.g. {"player1", "player2"})
             TradeMode = "all", -- "all" = everything in categories, "specific" = only Items list
             Categories = {}, -- {"pets", "toys", "food", "transport", "gifts", "stickers", "pet_accessories", "roleplay"}
             Items = {}, -- Item IDs when TradeMode = "specific" (e.g. {"dog", "cat", "turtle"})
@@ -58,8 +58,8 @@
             MaxPerType = {}, -- {} = unlimited, {dog = 2, cat = 1} = limits per pet type
         },
         AutoPotion = {
-            Enabled = false, -- Use age potions on pets to level them up
-            SelectedPets = {"lny_2026_fire_foal"}, -- Pet IDs to use potions on (empty = does nothing)
+            Enabled = true, -- Use age potions on pets to level them up
+            SelectedPets = {"beach_2024_mahi_mahi"}, -- Pet IDs to use potions on (empty = does nothing)
             PotionVersionFilter = {}, -- Per-pet version filter e.g. {dog = {"neon"}, cat = {"regular", "neon"}} - empty = all versions
         },
         AutoBuy = {
@@ -123,10 +123,10 @@
             },
         },
         Settings = {
-            AutoShowUI = true, -- Load the UI on script start (main overlay disable for less memory usage)
+            AutoShowUI = false, -- Load the UI on script start (main overlay disable for less memory usage)
             ShowOverlay = true, -- Show stats oReduce verlay (disables 3D rendering)
             ReduceGraphics = true, -- Reduce graphics quality to minimum
-            FPSCap = 0, -- FPS cap option (0 = uncapped)
+            FPSCap = 0, -- FPS cap option ( = uncapped)
             LureId = "ice_dimension_2025_ice_soup_bait", -- what lure to use for example: "ice_dimension_2025_ice_soup_bait"
             TradeInvites = "Everyone", -- "Everyone" or "Friends"
         },
