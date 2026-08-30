@@ -3,8 +3,8 @@
         AutoCertificate = false, -- Auto use Pet Handler Pro Certificate when less than 30 days remaining
         PetFarm = {
             Enabled = true, -- Enables the Pet Farm
-            FarmEggs = true, -- If true, equips eggs to hatch them. If false, equips regular pets
-            BuyEggs = true, -- If FarmEggs is true and no eggs in inventory, buy eggs automatically
+            FarmEggs = false, -- If true, equips eggs to hatch them. If false, equips regular pets
+            BuyEggs = false, -- If FarmEggs is true and no eggs in inventory, buy eggs automatically
             EggTypes = {"fairytale_egg_2026_fairytale_egg"}, -- Which eggs to equip ({} = any egg, or {"cracked_egg", "royal_egg"} for specific)
             BuyEggType = "specific", -- Which egg to buy when BuyEggs is true ("any" or specific egg ID)
             MaxPets = 1, -- How many pets to equip at once (1 = free, 2 = requires Robux gamepass)
@@ -23,7 +23,7 @@
         AutoBuy = {
             Enabled = true, -- Automatically buy items from shops
             SelectedItems = {"fairytale_egg_2026_fairytale_egg"}, -- Item IDs to buy
-            BuyAmounts = {}, -- How many of each item to buy. Example: {5, 10} buys 5 cracked_eggs and 10 sandwiches. Empty {} buys infinite of each item. If there are more items than amounts, remaining items default to infinite.
+            BuyAmounts = {4}, -- How many of each item to buy. Example: {5, 10} buys 5 cracked_eggs and 10 sandwiches. Empty {} buys infinite of each item. If there are more items than amounts, remaining items default to infinite.
         },
         AutoOpen = {
             Enabled = false, -- Open gift boxes automatically
@@ -52,10 +52,10 @@
             ExcludedPets = {}, -- Pet IDs to never recycle e.g. {"dog", "cat", "shadow_dragon"}
         },
        IdleProgression = {
-            Enabled = false, -- Put pets in pet pen for idle leveling
-            SelectedPets = {"cracked_egg"}, -- Pet IDs to put in pet pen (empty = use all)
+            Enabled = true, -- Put pets in pet pen for idle leveling
+            SelectedPets = {"fairytale_egg_2026_fairytale_egg"}, -- Pet IDs to put in pet pen (empty = use all)
             ExcludedPets = {}, -- Pet IDs to never put in pet pen
-            PriorityOrder = {}, -- Order: first = highest priority for pen slots (e.g. {"neon", "regular", "mega"})
+            PriorityOrder = {"regular"}, -- Order: first = highest priority for pen slots (e.g. {"neon", "regular", "mega"})
             PenVersionFilter = {}, -- Per-pet version filter e.g. {dog = {"neon"}, cat = {"regular"}} - empty = all versions
         },
         Settings = {
