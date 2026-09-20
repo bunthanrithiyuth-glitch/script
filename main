@@ -6,7 +6,7 @@
             LureId = "ice_dimension_2025_ice_soup_bait", -- what lure to use for example: "ice_dimension_2025_ice_soup_bait"
             TradeInvites = "Everyone", -- "Everyone" or "Friends"
         },
-        BabyFarm = fasle, -- Does baby farm
+        BabyFarm = false, -- Does baby farm
         AutoCertificate = false, -- Auto use Pet Handler Pro Certificate when less than 30 days remaining
         PetFarm = {
             Enabled = true, -- Enables the Pet Farm
@@ -60,14 +60,14 @@
             Pets = {"beach_2024_gold_mahi_mahi"}, -- Specific pet IDs to always recycle regardless of RarityFilter, e.g. {"basic_egg_2022_ant", "basic_egg_2022_mouse"}
                        -- Add :version and/or :age:N to narrow it down (1 = Newborn, 6 = Full Grown)
                        -- e.g. {"basic_egg_2022_corgi:regular", "basic_egg_2022_ant:age:1", "basic_egg_2022_camel:neon:age:6"}
-            Keep = {}, -- Keep this many of a pet and recycle the rest, e.g. {basic_egg_2022_ant = 4, basic_egg_2022_camel = 4} (4 each = enough for a neon)
+            Keep = {"beach_2024_mahi_mahi"}, -- Keep this many of a pet and recycle the rest, e.g. {basic_egg_2022_ant = 4, basic_egg_2022_camel = 4} (4 each = enough for a neon)
             Excluded = {"beach_2024_mahi_mahi"}, -- Never recycle these, e.g. {"shadow_dragon", "basic_egg_2022_alicorn"}
                            -- Also accepts :version and :age:N, e.g. {"basic_egg_2022_corgi:neon", "basic_egg_2022_ant:age:6"}
         },
         AutoBuy = {
             Enabled = true, -- Automatically buy items from shops
             SelectedItems = {"beach_2024_mahi_spinning_rod"}, -- Item IDs to buy
-            BuyAmounts = {}, -- How many of each item to buy. Example: {5, 10} buys 5 cracked_eggs and 10 sandwiches. Empty {} buys infinite of each item. If there are more items than amounts, remaining items default to infinite.
+            BuyAmounts = {10000}, -- How many of each item to buy. Example: {5, 10} buys 5 cracked_eggs and 10 sandwiches. Empty {} buys infinite of each item. If there are more items than amounts, remaining items default to infinite.
         },
         AutoOpen = {
             Enabled = true, -- Open gift boxes automatically
